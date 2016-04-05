@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AppSleep</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Inici</item>
+    </string-array>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="loggin_info">Introdueixi les seves dades per accedir al vostre perfil:</string>
+    <string name="registraion_info">Introdueixi les seves dades per registrar el seu perfil personal:</string>
+
+</resources>

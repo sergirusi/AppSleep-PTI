@@ -1,0 +1,47 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- TEXT DIMENSION -->
+    <dimen name="small_text_size">12dp</dimen>
+    <dimen name="base_text_size">14dp</dimen>
+    <dimen name="medium_text_size">15dp</dimen>
+    <dimen name="big_text_size">16dp</dimen>
+    <dimen name="bigger_text_size">18dp</dimen>
+    <dimen name="huge_text_size">20dp</dimen>
+
+    <!-- PADDING & MARGIN DIMENSIONS-->
+    <dimen name="small_navigation_margin_top">12dp</dimen>
+    <dimen name="small_navigation_margin_bottom">12dp</dimen>
+    <dimen name="base_navigation_margin_top">16dp</dimen>
+    <dimen name="base_navigation_margin_left">16dp</dimen>
+    <dimen name="base_navigation_margin_right">16dp</dimen>
+    <dimen name="bigger_navigation_margin_bottom">28dp</dimen>
+
+    <dimen name="normal_padding_left">10dp</dimen>
+    <dimen name="normal_padding_top1">10dp</dimen>
+    <dimen name="normal_padding_top2">15dp</dimen>
+    <dimen name="normal_padding_bottom1">10dp</dimen>
+    <dimen name="normal_padding_bottom2">15dp</dimen>
+
+    <dimen name="small_layout_margin_right">5dp</dimen>
+    <dimen name="normal_layout_margin_left">10dp</dimen>
+    <dimen name="normal_layout_margin_right">10dp</dimen>
+    <dimen name="normal_layout_margin_top">10dp</dimen>
+    <dimen name="normal_layout_margin_bottom">15dp</dimen>
+    <dimen name="big_layout_margin_top">24dp</dimen>
+    <dimen name="big_layout_margin_bottom">24dp</dimen>
+    <dimen name="large_layout_margin_top">50dp</dimen>
+
+
+    <!-- LAYOUT DIMENSION -->
+    <dimen name="layout_height_navigation_item">48dp</dimen>
+    <dimen name="layout_height_navigation_header">140dp</dimen>
+    <dimen name="layout_width_navigation">304dp</dimen>
+
+    <dimen name="profile_edittext_layout_width">330dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+</resources>

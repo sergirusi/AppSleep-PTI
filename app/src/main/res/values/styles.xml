@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/LightGrey</item>
+        <item name="colorPrimaryDark">@color/DarkGrey</item>
+        <item name="colorAccent">@color/Orange</item>
+    </style>
+
+    <style name="navigation_image_item">
+        <item name="android:layout_marginTop">@dimen/small_navigation_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/small_navigation_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/base_navigation_margin_left</item>
+    </style>
+
+    <style name="navigation_header_image">
+        <item name="android:layout_marginTop">@dimen/base_navigation_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/base_navigation_margin_left</item>
+    </style>
+
+    <style name="navigation_text_item">
+        <item name="android:layout_marginTop">@dimen/small_navigation_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/small_navigation_margin_bottom</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

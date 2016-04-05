@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TEXTVIEWS -->
+
+    <style name="profile_name" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/base_text_size</item>
+        <item name="android:layout_marginLeft">115dp</item>
+        <item name="android:layout_marginTop">@dimen/normal_layout_margin_top</item>
+        <!--<item name="android:layout_marginBottom">@dimen/bigger_navigation_margin_bottom</item>-->
+        <item name="android:layout_marginRight">@dimen/base_navigation_margin_right</item>
+    </style>
+
+    <style name="header_title" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/base_text_size</item>
+    </style>
+
+    <style name="success_header1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/bigger_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/big_layout_margin_top</item>
+    </style>
+
+    <style name="success_header2" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/bigger_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/big_layout_margin_bottom</item>
+    </style>
+
+    <style name="profile_standard_text1" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/bigger_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/normal_layout_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/normal_layout_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/small_layout_margin_right</item>
+    </style>
+
+    <style name="profile_standard_text2" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/bigger_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/normal_layout_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/big_layout_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/small_layout_margin_right</item>
+    </style>
+
+    <style name="profile_bold_text1" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/bigger_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/normal_layout_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/normal_layout_margin_top</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="profile_bold_text2" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/bigger_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/normal_layout_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/normal_layout_margin_top</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- EDITTEXTS -->
+
+    <style name="profile_edittext" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/bigger_text_size</item>
+        <item name="android:paddingTop">@dimen/normal_padding_top1</item>
+        <item name="android:paddingBottom">@dimen/normal_padding_bottom1</item>
+        <item name="android:paddingLeft">@dimen/normal_padding_left</item>
+        <item name="android:background">@color/LightGrey</item>
+    </style>
+    
+    <!-- BUTTONS -->
+
+    <style name="profile_button" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/huge_text_size</item>
+        <item name="android:layout_marginTop">@dimen/large_layout_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/normal_layout_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/normal_layout_margin_right</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/Orange</item>
+    </style>
+
+</resources>
