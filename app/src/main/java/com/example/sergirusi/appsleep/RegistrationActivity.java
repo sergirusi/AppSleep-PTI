@@ -1,9 +1,8 @@
 package com.example.sergirusi.appsleep;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -12,14 +11,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
-import java.net.URL;
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -81,15 +75,22 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
             case R.id.next_btn:
                 String p = password.getText().toString();
                 String repeat = repeat_password.getText().toString();
+                JSONObject data = new JSONObject();
+                try {
+                    data.put("user", username.getText().toString());
+                    data.put("passwd", password.getText().toString());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
                 if (mode.equals("REGISTER") && repeat.equals(p)) {
-                    JSONObject data = new JSONObject();
-                    try {
-                        data.put("user", username.getText().toString());
-                        data.put("passwd", password.getText().toString());
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                    new HTTPAwsConnection().execute(data);
+                    new HttpPostConnection().execute(String.valueOf(data));
+                    Intent intent = getIntent();
+                    intent.putExtra("name", username.getText().toString());
+                    setResult(RESULT_OK, intent);
+                    finish();
+                }
+                else if (mode.equals("LOGGIN")) {
+//                    JSONObject obj = new HttpGetConnection().getJSONFromUrl();
                 }
                 break;
         }

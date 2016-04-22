@@ -28,6 +28,9 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private final static int REQUEST_CODE = 1234;
+
     private ImageButton imageProfile;
 
     private RecyclerView recyclerView;
@@ -164,7 +167,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v.getId() == R.id.profileImg) {
             Intent loggin = new Intent(this, RegistrationActivity.class);
-            startActivity(loggin);
+            startActivityForResult(loggin, REQUEST_CODE);
         }
     }
 
@@ -227,5 +230,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         drawerToggle.syncState();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        String mode = data.getStringExtra("mode");
+        if(resultCode == RESULT_OK ) {
+            String username = data.getStringExtra("name");
+            
+        }
     }
 }
