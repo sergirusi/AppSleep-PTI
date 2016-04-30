@@ -6,7 +6,7 @@
     <color name="White">#F8F8F7</color>
     <color name="Orange">#FF6D00</color>
     <color name="DarkOrange">#EF6C00</color>
-
+    <color name="Transparent">#00000000</color>
     <color name="MaterialDark">#212121</color>
 
 </resources>

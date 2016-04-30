@@ -10,6 +10,9 @@
 
     <string-array name="navigation_drawer_items_array">
         <item>Inici</item>
+        <item>Diari</item>
+        <item>Setmanal</item>
+        <item>Mensual</item>
     </string-array>
     <string name="title_activity_registration">RegistrationActivity</string>
     <string name="loggin_info">Introdueixi les seves dades per accedir al vostre perfil:</string>

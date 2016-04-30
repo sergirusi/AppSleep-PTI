@@ -7,7 +7,7 @@
     android:background="@color/MaterialDark"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.example.sergirusi.appsleep.RegistrationActivity">
+    tools:context=".Activities.RegistrationActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -171,7 +171,8 @@
                             android:layout_marginRight="1dp"
                             android:layout_marginTop="1dp"
                             android:background="@color/White"
-                            android:paddingLeft="5dp" />
+                            android:paddingLeft="5dp"
+                            android:inputType="textPassword"/>
                     </LinearLayout>
 
                 </LinearLayout>

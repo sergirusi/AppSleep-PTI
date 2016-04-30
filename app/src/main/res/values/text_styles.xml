@@ -7,7 +7,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">@dimen/base_text_size</item>
-        <item name="android:layout_marginLeft">115dp</item>
+        <item name="android:layout_marginLeft">70dp</item>
         <item name="android:layout_marginTop">@dimen/normal_layout_margin_top</item>
         <!--<item name="android:layout_marginBottom">@dimen/bigger_navigation_margin_bottom</item>-->
         <item name="android:layout_marginRight">@dimen/base_navigation_margin_right</item>
