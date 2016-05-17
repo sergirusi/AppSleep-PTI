@@ -10,6 +10,7 @@
     <dimen name="big_text_size">16dp</dimen>
     <dimen name="bigger_text_size">18dp</dimen>
     <dimen name="huge_text_size">20dp</dimen>
+    <dimen name="title_text_size">24sp</dimen>
 
     <!-- PADDING & MARGIN DIMENSIONS-->
     <dimen name="small_navigation_margin_top">12dp</dimen>

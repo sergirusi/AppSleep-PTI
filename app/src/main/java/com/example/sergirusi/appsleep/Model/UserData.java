@@ -1,6 +1,11 @@
 package com.example.sergirusi.appsleep.Model;
 
+import org.json.JSONArray;
+
+import java.util.ArrayList;
+
 import io.realm.Realm;
+import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
