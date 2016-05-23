@@ -173,6 +173,30 @@ public class MainPresenter implements Presenter {
     public void setTimeSlept(String username) {
         String timeString = getTimeSlept(username);
         int time = Integer.valueOf(timeString);
+        int hours = time/3600;
+        int minutes = (time%3600)/60;
+        int seconds = (time%3600)%60;
+        String hoursString;
+        if(hours < 10) {
+            hoursString = "0" + String.valueOf(hours);
+        } else {
+            hoursString = String.valueOf(hours);
+        }
+        context.hours.setText(hoursString);
+        String minutesString;
+        if(minutes < 10) {
+            minutesString = "0" + String.valueOf(minutes);
+        } else {
+            minutesString = String.valueOf(minutes);
+        }
+        context.minutes.setText(minutesString);
+        String secondsString;
+        if(seconds < 10) {
+            secondsString = "0" + String.valueOf(seconds);
+        } else {
+            secondsString = String.valueOf(seconds);
+        }
+        context.seconds.setText(secondsString);
     }
 
     public String getTimeSlept(String username) {

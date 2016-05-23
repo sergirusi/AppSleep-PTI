@@ -136,14 +136,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         profileStatus.setOnClickListener(this);
         refreshButton.setOnClickListener(this);
         drawerList.addHeaderView(header);
-        boolean isCameraActivated;
         if (isLogged) {
             profileStatus.setVisibility(View.VISIBLE);
             isCameraActivated = mainPresenter.isCameraON(profileName.getText().toString());
-            enableCamera.setChecked(isCameraActivated);
+            mainPresenter.setTimeSlept(profileName.getText().toString());
         } else {
             profileStatus.setVisibility(View.GONE);
-            enableCamera.setChecked(false);
         }
         try {
             mainPresenter.createChart(lineChart, profileName.getText().toString());
@@ -184,14 +182,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onDrawerClosed(View view) {
                 super.onDrawerClosed(view);
                 getSupportActionBar().setTitle(title);
-                enableCamera.setChecked(isCameraActivated);
             }
 
             /** Called when a drawer has settled in a completely open state. */
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
                 getSupportActionBar().setTitle(drawerTitle);
-                enableCamera.setChecked(isCameraActivated);
+                if(isLogged) {
+                    enableCamera.setChecked(isCameraActivated);
+                }
             }
         };
     }
@@ -203,10 +202,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (isLogged) {
             profileStatus.setVisibility(View.VISIBLE);
             isCameraActivated = mainPresenter.isCameraON(profileName.getText().toString());
-            enableCamera.setChecked(isCameraActivated);
+            mainPresenter.setTimeSlept(profileName.getText().toString());
         } else {
             profileStatus.setVisibility(View.GONE);
-            enableCamera.setChecked(false);
         }
         try {
             mainPresenter.createChart(lineChart, profileName.getText().toString());
@@ -300,6 +298,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.refresh_button:
                 try {
                     mainPresenter.createChart(lineChart, profileName.getText().toString());
+                    if(isLogged) {
+                        mainPresenter.setTimeSlept(profileName.getText().toString());
+                    }
                 } catch (ExecutionException | InterruptedException e) {
                     e.printStackTrace();
                 }

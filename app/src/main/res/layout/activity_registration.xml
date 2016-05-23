@@ -17,14 +17,14 @@
         <include
             layout="@layout/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
     </android.support.design.widget.AppBarLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/Orange"/>
+        android:background="@color/Orange" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,34 +43,34 @@
 
                 <Button
                     android:id="@+id/loggin_btn"
+                    fontPath="fonts/Roboto-Medium.ttf"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="50"
-                    android:paddingLeft="5dp"
                     android:background="@color/Orange"
+                    android:drawableLeft="@mipmap/ic_loggin_active"
+                    android:paddingLeft="5dp"
                     android:text="Loggin"
-                    fontPath="fonts/Roboto-Medium.ttf"
-                    android:textColor="@color/MaterialDark"
-                    android:drawableLeft="@mipmap/ic_loggin_active" />
+                    android:textColor="@color/MaterialDark" />
 
                 <Button
                     android:id="@+id/register_btn"
+                    fontPath="fonts/Roboto-Medium.ttf"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="50"
-                    android:paddingLeft="5dp"
                     android:background="@color/MaterialDark"
+                    android:drawableLeft="@mipmap/ic_register"
+                    android:paddingLeft="5dp"
                     android:text="Registre"
-                    fontPath="fonts/Roboto-Medium.ttf"
-                    android:textColor="@color/Orange"
-                    android:drawableLeft="@mipmap/ic_register" />
+                    android:textColor="@color/Orange" />
 
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/Orange"/>
+                android:background="@color/Orange" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -171,8 +171,8 @@
                             android:layout_marginRight="1dp"
                             android:layout_marginTop="1dp"
                             android:background="@color/White"
-                            android:paddingLeft="5dp"
-                            android:inputType="textPassword"/>
+                            android:inputType="textPassword"
+                            android:paddingLeft="5dp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -207,6 +207,7 @@
                             android:layout_marginRight="1dp"
                             android:layout_marginTop="1dp"
                             android:background="@color/White"
+                            android:inputType="textPassword"
                             android:paddingLeft="5dp" />
                     </LinearLayout>
 
